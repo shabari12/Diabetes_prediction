@@ -16,11 +16,11 @@ class ModelInput(BaseModel):
     DiabetesPedigreeFunction: float
     Age: int
 
-# loading the saved model
+
 
 
 model = pickle.load(open('C:/Users/uma digital/Desktop/pythongrind/Diabetes/diabetesmodel.sav','rb'))
-#scaler = pickle.load(open('C:/Users/uma digital/Desktop/pythongrind/Diabetes/scaler.sav', 'rb'))    
+  
 
 @app.post('/diabetes_predictions')
 def prediction(input_params:ModelInput):

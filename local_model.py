@@ -3,7 +3,7 @@ import pickle
 
 loaded_model = pickle.load(open('C:/Users/uma digital/Desktop/pythongrind/Diabetes/diabetesmodel.sav','rb'))
 scaler = pickle.load(open('C:/Users/uma digital/Desktop/pythongrind/Diabetes/scaler.sav', 'rb'))
-m
+# Making a predictive System
 input_data = (7,196,90,0,0,39.8,0.451,41)
 
 input_data_np = np.asarray(input_data)
